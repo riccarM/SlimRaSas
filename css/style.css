@@ -1,8 +1,355 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+body {
+  background-color: #e8f5e9;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  border: thin solid rgba(255, 255, 255, 0);
+  border-radius: 1rem;
+}
+main section {
+  padding: 1rem;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #3c3c3c;
+}
+li {
+  list-style: none;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #3c3c3c;
+}
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+  color: #3c3c3c;
+}
+a:hover {
+  color: #3c3c3c;
+  transform: scale(1.1, 1.1);
+}
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  background-color: #5fb878;
+  border: thin solid;
+  border-radius: 1rem;
+  width: 200px;
+  height: 40px;
+}
+button:hover {
+  background-color: #4da766;
+}
+header {
+  background-color: #ffffff;
+  width: 100%;
+  height: 10vh;
+}
+header ul {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+header li:first-child {
+  font-size: 28px;
+}
+header ul li {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
+header ul li a {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+header ul li img {
+  width: 70px;
+  height: 50px;
+}
+
+.SlimRas {
+  background-image: linear-gradient(
+    45deg,
+    white,
+    rgb(92, 174, 92),
+    rgb(56, 143, 51)
+  );
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.leftSlimRas {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.leftSlimRas p,
+h1 {
+  width: 80%;
+  text-align: left;
+}
+.leftSlimRas button {
+  width: 25%;
+}
+
+.rightSlimRas {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutSlim {
+  background-color: #e8f5e9;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.aboutleft {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.aboutleft p,
+h2 {
+  width: 80%;
+  text-align: left;
+}
+.aboutright {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.productos {
+  background-color: #ffffff;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.productos h2 {
+  margin-bottom: 1rem;
+  padding-left: 5%;
+  width: 80%;
+  text-align: left;
+}
+
+.productos aside {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.productos aside article {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.productos aside article h4 {
+  width: 100%;
+  text-align: center;
+}
+.productos aside article p {
+  width: 100%;
+  text-align: center;
+}
+.productos aside article img {
+  width: 150px;
+  height: 150px;
+  border-radius: 1rem;
+  margin-left: 1rem;
+}
+.productos button {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tecnologia {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.tecnologiaLeft {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.tecnologiaLeft p,
+h2 {
+  width: 80%;
+  text-align: left;
+}
+.tecnologiaRight {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.tecnologiaRight ul li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.tecnologiaRight ul {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+.tecnologiaRight ul li {
+  width: 50%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.sostenible {
+  background-color: #ffffff;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.sostenible aside {
+  width: 90%;
+}
+
+.contacto {
+  background-color: #e8f5e9;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.contactoleft {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.contactoleft ul {
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contactoleft ul li {
+  text-align: left;
+  width: 100%;
+}
+.contactoleft p,
+h2 {
+  margin-bottom: 0;
+  width: 80%;
+  text-align: left;
+}
+.contactoright {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactoright form textarea {
+  margin-top: 2rem;
+  resize: none;
+  width: 100%;
+  color: gray;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+form button {
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  width: 100%;
+  height: 10vh;
+  padding: 1rem;
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: oblique;
 }
