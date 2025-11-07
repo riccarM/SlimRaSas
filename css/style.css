@@ -47,7 +47,6 @@ a {
   color: #3c3c3c;
 }
 a:hover {
-  color: #3c3c3c;
   transform: scale(1.1, 1.1);
 }
 button {
@@ -89,11 +88,19 @@ header ul li {
   align-items: center;
   width: 20%;
 }
+header ul li:hover {
+  background-color: #2b5c39;
+  color: whitesmoke;
+}
 header ul li a {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+}
+
+header ul li a:hover {
+  color: whitesmoke;
 }
 header ul li img {
   width: 70px;
@@ -101,17 +108,16 @@ header ul li img {
 }
 
 .SlimRas {
-  background-image: linear-gradient(
-    45deg,
-    white,
-    rgb(92, 174, 92),
-    rgb(56, 143, 51)
-  );
+  background-image: url("../assets/fondoPrincipal.jpg");
+  color: aliceblue;
   width: 100%;
   height: 80vh;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+}
+.SlimRas h1 {
+  color: aliceblue;
 }
 .leftSlimRas {
   width: 50%;
@@ -133,12 +139,11 @@ h1 {
 .rightSlimRas {
   width: 50%;
   height: 80%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
 }
-
+.rightSlimRas img {
+  width: 100%;
+  height: 100%;
+}
 .aboutSlim {
   background-color: #e8f5e9;
   width: 100%;
@@ -167,6 +172,10 @@ h2 {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+}
+.aboutright img {
+  width: 60%;
+  height: 90%;
 }
 .productos {
   background-color: #ffffff;
@@ -307,6 +316,8 @@ h2 {
 }
 .contactoleft ul li {
   text-align: left;
+  margin-bottom: 10px;
+  font-weight: 400;
   width: 100%;
 }
 .contactoleft p,
@@ -364,7 +375,9 @@ footer p {
   header {
     height: auto;
   }
-
+  .imagen {
+    margin-right: 15%;
+  }
   header ul {
     flex-direction: column;
     align-items: center;
@@ -398,7 +411,7 @@ footer p {
   .leftSlimRas h1,
   .leftSlimRas p {
     width: 90%;
-    text-align: center;
+    text-align: left;
   }
 
   .leftSlimRas button {
@@ -423,7 +436,7 @@ footer p {
   .aboutleft h2,
   .aboutleft p {
     width: 90%;
-    text-align: center;
+    text-align: left;
   }
 
   .productos {
@@ -476,7 +489,7 @@ footer p {
   .tecnologiaLeft h2,
   .tecnologiaLeft p {
     width: 90%;
-    text-align: center;
+    text-align: left;
   }
 
   .tecnologiaRight ul {
@@ -485,7 +498,7 @@ footer p {
 
   .tecnologiaRight ul li {
     width: 80%;
-    justify-content: center;
+    justify-content: left;
   }
 
   .tecnologiaRight ul li img {
@@ -495,7 +508,7 @@ footer p {
   .sostenible {
     height: auto;
     padding: 2rem 0;
-    text-align: center;
+    text-align: left;
   }
 
   .sostenible aside {
@@ -513,7 +526,7 @@ footer p {
   .contactoright {
     width: 100%;
     height: auto;
-    justify-content: center;
+    justify-content: left;
   }
 
   .contactoleft ul {
@@ -521,11 +534,12 @@ footer p {
   }
 
   .contactoleft ul li {
-    text-align: center;
+    text-align: left;
   }
 
   .contactoleft h2 {
-    text-align: center;
+    text-align: left;
+    margin-left: 1rem;
   }
 
   .contactoright form {
@@ -535,6 +549,7 @@ footer p {
 
   .contactoright form textarea {
     width: 100%;
+    margin-left: 1rem;
     margin-top: 1rem;
   }
 
