@@ -68,6 +68,7 @@ header {
   width: 100%;
   height: 10vh;
 }
+
 header ul {
   width: 100%;
   height: 100%;
@@ -352,4 +353,199 @@ footer p {
   margin: 0;
   font-family: "Poppins", sans-serif;
   font-style: oblique;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-flow: column nowrap;
+    overflow-x: hidden;
+  }
+
+  header {
+    height: auto;
+  }
+
+  header ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  header ul li {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  header li:first-child {
+    font-size: 22px;
+  }
+
+  .SlimRas {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .leftSlimRas,
+  .rightSlimRas {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .leftSlimRas h1,
+  .leftSlimRas p {
+    width: 90%;
+    text-align: center;
+  }
+
+  .leftSlimRas button {
+    width: 60%;
+    margin: 0.5rem auto;
+  }
+
+  .aboutSlim {
+    flex-direction: column-reverse;
+    height: auto;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .aboutleft,
+  .aboutright {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .aboutleft h2,
+  .aboutleft p {
+    width: 90%;
+    text-align: center;
+  }
+
+  .productos {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+  }
+
+  .productos h2 {
+    width: 90%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .productos aside {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productos aside article {
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+
+  .productos aside article img {
+    width: 80%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .productos button {
+    width: 60%;
+  }
+
+  .tecnologia {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .tecnologiaLeft,
+  .tecnologiaRight {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tecnologiaLeft h2,
+  .tecnologiaLeft p {
+    width: 90%;
+    text-align: center;
+  }
+
+  .tecnologiaRight ul {
+    align-items: center;
+  }
+
+  .tecnologiaRight ul li {
+    width: 80%;
+    justify-content: center;
+  }
+
+  .tecnologiaRight ul li img {
+    margin-right: 10px;
+  }
+
+  .sostenible {
+    height: auto;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .sostenible aside {
+    width: 90%;
+  }
+
+  .contacto {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .contactoleft,
+  .contactoright {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .contactoleft ul {
+    align-items: center;
+  }
+
+  .contactoleft ul li {
+    text-align: center;
+  }
+
+  .contactoleft h2 {
+    text-align: center;
+  }
+
+  .contactoright form {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .contactoright form textarea {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  form button {
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  footer {
+    height: auto;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
 }
