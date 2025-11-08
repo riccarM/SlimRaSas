@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SlimRaSas</title>
+    <title>SlimRASAS</title>
     <link rel="icon" href="/assets/pequeño.svg" type="image/svg" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -13,11 +13,11 @@
       <ul>
         <li>
           <a href="index.html" class="imagen"
-            ><img src="assets/pequeño.svg" alt="icono" /> SlimRaSas</a
+            ><img src="assets/pequeño.svg" alt="icono" /> SlimRASAS</a
           >
         </li>
         <li><a href="#productos">Productos</a></li>
-        <li><a href="#tecnologia">Tecnologia</a></li>
+        <li><a href="#tecnologia">Tecnología</a></li>
         <li><a href="#sostenible">Sostenibilidad</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
@@ -25,14 +25,21 @@
     <main>
       <section class="SlimRas">
         <aside class="leftSlimRas">
-          <h1>Tecnologia que se adapta a la naturaleza</h1>
+          <h1>Tecnología que se adapta a la naturaleza</h1>
           <p>
-            En SlimRaSas, desarrollamos pantallas electrónicas de alta precisión
+            En SlimRASAS, desarrollamos pantallas electrónicas de alta precisión
             para celulares, vehículos y tableros industriales, con procesos
             sostenibles y materiales que respetan el entorno.
           </p>
-          <button>Ver Productos</button>
-          <button>Conoce mas</button>
+          <a href="#productos"
+            ><button class="verproductos">Ver Productos</button></a
+          >
+          <a
+            href="https://open.spotify.com/episode/0XnB3y14rVrJryWrmn950H?si=uegqH3yxSySvSNZqvwNqUA"
+            target="_blank"
+          >
+            <button class="verpodcast">Conoce mas</button></a
+          >
         </aside>
         <aside class="rightSlimRas">
           <img src="assets/pantallaside.png" alt="pantallaTraslucida" />
@@ -42,7 +49,7 @@
         <aside class="aboutleft">
           <h2>Diseñamos tecnología con conciencia ecológica</h2>
           <p>
-            En SlimRaSas creemos que el futuro de la innovación está en la
+            En SlimRASAS creemos que el futuro de la innovación está en la
             armonía entre la tecnología y la naturaleza. Fabricamos pantallas
             electrónicas para diferentes sectores desde dispositivos móviles
             hasta tableros industriales priorizando la eficiencia energética, la
@@ -54,12 +61,12 @@
         </aside>
       </section>
       <section id="productos" class="productos">
-        <h2>Pantallas inteligentes para cada aplicación.</h2>
+        <h2>Pantallas inteligentes para cada aplicación</h2>
         <aside>
           <article>
             <img src="assets/PantallaCelular.jpg" alt="pantallaCelular" />
             <h4>Pantallas para Celulares</h4>
-            <p>Ultra delgadas, resistentes y con colores naturales.</p>
+            <p>Ultra delgadas, resistentes y con colores naturales</p>
           </article>
           <article>
             <img src="assets/PantallaPC.jpg" alt="PantallaTComputador" />
@@ -73,7 +80,12 @@
             <p>Precisión y adaptabilidad a condiciones extremas</p>
           </article>
         </aside>
-        <button>Explorar catálogo</button>
+        <a
+          href="assets/Ficha técnica producto SlimRA SAS.pdf"
+          download="Ficha_Tecnica_Pantalla.pdf"
+        >
+          <button class="catalogo">Explorar catálogo</button></a
+        >
       </section>
       <section id="tecnologia" class="tecnologia">
         <aside class="tecnologiaLeft">
@@ -101,7 +113,7 @@
             </li>
             <li>
               <img src="assets/plant-svgrepo-com.svg" alt="" />
-              <p>Produccion limpia</p>
+              <p>Producción limpia</p>
             </li>
           </ul>
         </aside>
@@ -110,7 +122,7 @@
         <aside>
           <h2>Tecnología responsable, futuro sostenible.</h2>
           <p>
-            En SlimRaSas trabajamos por un mundo más verde. Colaboramos con
+            En SlimRASAS trabajamos por un mundo más verde. Colaboramos con
             programas de reforestación y aplicamos estrategias de compensación
             de carbono en cada lote de producción. Nuestro objetivo: un
             equilibrio entre innovación y responsabilidad ambiental.
@@ -121,21 +133,28 @@
         <aside class="contactoleft">
           <h2>Conéctate con la tecnología del futuro.</h2>
           <ul>
-            <li>Adri Plata</li>
-            <li>SlimRaSas</li>
-            <li>slimRASAS@outlook.com</li>
+            <li>Adriana Plata - Guillermo Mejia</li>
+            <li>SlimRASAS</li>
+            <li>slimrasas@outlook.com</li>
             <li>Productos Electronicos</li>
           </ul>
         </aside>
         <aside class="contactoright">
-          <form>
+          <form class="form">
             <textarea name="" id="" rows="5" cols="50">
-            Envia un mensaje a SlimRaSas...</textarea
+Envía un mensaje a SlimRaSas...</textarea
             >
-            <button>Enviar mensaje</button>
+            <button type="submit" id="abrirModal">Enviar mensaje</button>
           </form>
         </aside>
       </section>
+      <!-- Ventana modal -->
+      <div id="miModal" class="modal">
+        <div class="modal-contenido">
+          <span id="cerrarModal" class="cerrar">❌</span>
+          <p>Gracias por enviarnos tu mensaje 💚🤞</p>
+        </div>
+      </div>
     </main>
     <footer>
       <p>
@@ -143,5 +162,6 @@
         para un futuro inteligente.
       </p>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

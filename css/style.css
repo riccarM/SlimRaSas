@@ -132,10 +132,14 @@ h1 {
   width: 80%;
   text-align: left;
 }
-.leftSlimRas button {
+
+.leftSlimRas a {
   width: 25%;
 }
-
+.verproductos,
+.verpodcast {
+  width: 100%;
+}
 .rightSlimRas {
   width: 50%;
   height: 80%;
@@ -218,7 +222,7 @@ h2 {
   border-radius: 1rem;
   margin-left: 1rem;
 }
-.productos button {
+.productos a {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
@@ -414,11 +418,14 @@ footer p {
     text-align: left;
   }
 
-  .leftSlimRas button {
+  .leftSlimRas a {
     width: 60%;
-    margin: 0.5rem auto;
+    margin: 1rem auto;
   }
-
+  .verproductos,
+  .verpodcast {
+    width: 100%;
+  }
   .aboutSlim {
     flex-direction: column-reverse;
     height: auto;
@@ -467,7 +474,7 @@ footer p {
     margin-left: 0;
   }
 
-  .productos button {
+  .productos a {
     width: 60%;
   }
 
@@ -563,4 +570,50 @@ footer p {
     padding: 1.5rem 1rem;
     font-size: 0.9rem;
   }
+}
+
+/* Fondo semitransparente */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Caja del contenido */
+.modal-contenido {
+  background-color: #e8f5e9;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  height: 200px;
+  max-width: 800px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.modal-contenido p {
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #3c3c3c;
+}
+
+/* Botón de cierre */
+.cerrar {
+  color: #d81111;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+.cerrar:hover {
+  color: black;
 }
